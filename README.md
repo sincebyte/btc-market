@@ -16,10 +16,10 @@ go语言获取比特币行情，bit coin market ,比特币行情
 
 ```
 root@mac > ./btcprice                           
-¥ 46429.95
+$ 7413.92
 
 root@mac > ./btcprice -s CNY                               
-$ 7413.92
+¥ 46429.95
 
 root@mac > ./btcprice -s CNY,USD -c 0.044454                               
 ¥ 46429.95 2064.00
