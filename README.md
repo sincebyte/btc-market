@@ -2,7 +2,7 @@
 go语言获取比特币行情，bit coin market ,比特币行情
 
 # 使用
--s 换算单位，可以设置多个
+-s 换算单位，可以设置多个<br>
 -c 比特币数量
 ```
 ./btcprice:
@@ -12,7 +12,7 @@ go语言获取比特币行情，bit coin market ,比特币行情
     	refer to : https://blockchain.info/ticker (default "USD")
 ```
 # 返回
-换算单位标识符 单价 比特币数量价值
+换算单位标识符 , 单价 , 比特币数量价值
 
 ```
 root@mac > go run btcprice.go -c 0.044454 -s CNY,USD                               
@@ -20,11 +20,13 @@ root@mac > go run btcprice.go -c 0.044454 -s CNY,USD
 $ 7387.46 328.40
 ```
 # 编译
-跨平台交叉编译
-Linux
+go build ./btcprice.go
+
+## 跨平台交叉编译
+Linux<br>
 env CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
 
-# 有效组合：
+## 跨平台交叉编译,有效组合：
 ```
     $GOOS       $GOARCH   
     android     arm
@@ -58,7 +60,6 @@ env CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
     windows     386
     windows     amd64
 ```
-
 
 # 数据来源
 https://blockchain.info/ticker
