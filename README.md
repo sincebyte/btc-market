@@ -15,6 +15,12 @@ go语言获取比特币行情，bit coin market ,比特币行情
 换算单位标识符 , 单价 , 比特币数量价值
 
 ```
+root@mac > go run btcprice.go -s CNY                               
+¥ 46429.95
+
+root@mac > go run btcprice.go -s CNY                               
+$ 7413.92
+
 root@mac > go run btcprice.go -c 0.044454 -s CNY,USD                               
 ¥ 46429.95 2064.00
 $ 7387.46 328.40
