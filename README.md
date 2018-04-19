@@ -1,9 +1,11 @@
 # btc-market
 go语言获取比特币行情，bit coin market ,比特币行情
 
+![avatar](https://github.com/vanniuner/btc-market/blob/master/demo.gif)
+
 # 使用
 -s 换算单位，可以设置多个<br>
--m 不显示loading
+-m 不显示loading<br>
 -c 比特币数量
 
 ```
