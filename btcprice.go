@@ -13,12 +13,16 @@ import (
 
 func displayLoading(silent bool){
     if silent {return}
-    loading := []string{"loading ○●○●","loading ●○●○"}
-    i := 1
+    loading := []string{"loading    ","loading .  ","loading .. ","loading ..."}
+    i := 0
     for {
-        i = i + 1
-        fmt.Printf("\r%s", loading[i%2]) 
-        time.Sleep(time.Millisecond * 200) 
+        fmt.Printf("\r%c[1;0;32m%s%c[0m",0x1B, loading[i],0x1B) 
+        time.Sleep(time.Millisecond * 150) 
+        if(i==3){
+            i = 0
+        }else{   
+            i = i + 1
+        }
     }
 }
 
