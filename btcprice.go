@@ -47,7 +47,7 @@ func main() {
                 if math.Dim(*count, 0.0) <= 0.0 {
                     fmt.Printf("\r%v %.2f     \n", wsMap["symbol"] , cw)
                 }else{
-                    fmt.Printf("\r%v %.2f %.2f     \n ", wsMap["symbol"] , cw , *count*cw)
+                    fmt.Printf("\r%v %.2f %.2f     \n", wsMap["symbol"] , cw , *count*cw)
                 }
             }
         }
