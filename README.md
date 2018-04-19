@@ -8,6 +8,7 @@ go语言获取比特币行情，bit coin market ,比特币行情
 ./btcprice:
   -c float
     	count of btcoin
+  -m silent model ,without loading output
   -s string
     	refer to : https://blockchain.info/ticker (default "USD")
 ```
