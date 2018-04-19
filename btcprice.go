@@ -14,15 +14,10 @@ import (
 func displayLoading(silent bool){
     if silent {return}
     loading := []string{"loading    ","loading .  ","loading .. ","loading ..."}
-    i := 0
-    for {
+    for i := 0;;{
         fmt.Printf("\r%c[1;0;32m%s%c[0m",0x1B, loading[i],0x1B) 
         time.Sleep(time.Millisecond * 150) 
-        if(i==3){
-            i = 0
-        }else{   
-            i = i + 1
-        }
+        i = i%3+1
     }
 }
 
