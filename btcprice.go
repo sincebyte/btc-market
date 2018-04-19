@@ -26,8 +26,8 @@ func main() {
     count := flag.Float64("c",0.0,"count of btcoin")
     silent := flag.Bool("m",false,"silent model ,without loading output")
     flag.Parse()
-    symbols := strings.Split(*symbol, ",")
     go displayLoading(*silent)
+    symbols := strings.Split(*symbol, ",")
     resp, err := http.Get("https://blockchain.info/ticker")
     if err != nil {}
     if resp == nil {}
