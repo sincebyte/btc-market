@@ -3,7 +3,9 @@ go语言获取比特币行情，bit coin market ,比特币行情
 
 # 使用
 -s 换算单位，可以设置多个<br>
+-m 不显示loading
 -c 比特币数量
+
 ```
 ./btcprice:
   -c float
